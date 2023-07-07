@@ -1,0 +1,66 @@
+body {
+    background:  url(../img/dber.jpg);
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+ cursor: url(https://res.cloudinary.com/dspfsamgq/image/upload/v1579257122/5a3755ce3a48f0.7723702415135758862387_jvy9hf.png);
+}
+
+.table{
+width: 1100px;
+height: 350px;
+}
+.michen{
+    width: 200px;
+   height: 100px;
+    background: url(../img/devoka.jpg);
+    background-size: 100% 100%;
+    float:left;
+    margin-left: 15px;
+}
+
+
+
+.michen:nth-child(odd){
+    animation-name: move1;
+
+    animation-duration: 1.75s;
+
+    animation-timing-function: linear;
+
+   
+
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+
+    animation-fill-mode: none;
+}
+
+.michen:nth-child(even){
+    animation-name: move2;
+
+    animation-duration: 1.75s;
+
+    animation-timing-function: linear;
+
+
+
+    animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+
+    animation-fill-mode: none;
+}
+@keyframes move1{
+ 0%{}
+ 50%{transform:translateX(250px)}
+ 100%{transform:translateX(0)}
+}
+@keyframes move2{
+ 0%{}
+ 50%{transform:translateX(-200px) rotate(5deg)}
+ 100%{transform:translateX(0) rotate(0deg)}
+}
